@@ -1,0 +1,33 @@
+.col-md-12{
+    background: aquamarine;
+    border: solid black;
+}
+.apartment{
+    height: 100%;
+    width: 100%;
+}
+.doorFirstroom{
+    position: relative;
+    top: 565px;
+    left: 809px;
+    width: 57px;
+    height: 9px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+}
+.doorSecondroom{
+    position: relative;
+    top: 565px;
+    left: 945px;
+    width: 57px;
+    height: 9px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+}
+.window{
+    position: relative;
+    left: 1000px;
+    width: 100px;
+    height: 10px;
+    background-color: rgb(143, 225, 255);
+}
