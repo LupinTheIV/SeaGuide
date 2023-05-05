@@ -1,11 +1,27 @@
-.col-md-12{
-    background: aquamarine;
+.top{
     border: solid black;
+}
+.logo{
+    width: 15%;
+    height: 15%;
+    margin-left: 1%;
+}
+.camaraIcon{
+    font-size: 200%;
+    position: relative;
+    left: 25%;
+    bottom: 325px;
 }
 .apartment{
     height: 100%;
     width: 100%;
+    position: relative;
 }
+.camera{
+    margin-top: 5px;
+    border: solid black;
+}
+/*
 .doorFirstroom{
     position: relative;
     top: 565px;
@@ -31,3 +47,4 @@
     height: 10px;
     background-color: rgb(143, 225, 255);
 }
+*/
