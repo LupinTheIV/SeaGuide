@@ -9,16 +9,19 @@
 .camaraIcon{
     font-size: 200%;
     position: relative;
-    left: 25%;
+    left: 30%;
     bottom: 325px;
 }
-/*
 .apartment{
     height: 100%;
     width: 100%;
     position: relative;
-}*/
+}
+video{
+    height: 300px;
+}
 .camera{
+    text-align: center;
     margin-top: 5px;
     border: solid black;
 }
