@@ -9,13 +9,16 @@
 .camaraIcon{
     font-size: 200%;
     position: relative;
-    left: 30%;
-    bottom: 325px;
+    left: 25%;
+    bottom: 240px;
 }
 .apartment{
     height: 100%;
     width: 100%;
     position: relative;
+}
+#voz{
+    margin-top: 5px;
 }
 video{
     height: 300px;
@@ -25,30 +28,23 @@ video{
     margin-top: 5px;
     border: solid black;
 }
-/*
-.doorFirstroom{
+
+#mainDoor{
     position: relative;
-    top: 565px;
-    left: 809px;
-    width: 57px;
+    top: -215px;
+    left: 27.5%;
+    width: 6.5%;
     height: 9px;
     background-color: rgb(140, 77, 9);
     border: solid black;
+    rotate: 0deg;
 }
-.doorSecondroom{
+#windowLivingRoom{
     position: relative;
-    top: 565px;
-    left: 945px;
-    width: 57px;
-    height: 9px;
-    background-color: rgb(140, 77, 9);
-    border: solid black;
-}
-.window{
-    position: relative;
-    left: 1000px;
-    width: 100px;
-    height: 10px;
+    left: 16.8%;
+    top: -815px;
+    width: 17.7%;
+    height: 5px;
     background-color: rgb(143, 225, 255);
+    border: solid black;
 }
-*/

@@ -1,0 +1,23 @@
+{
+  "name": "bower.json",
+  "description": "all",
+  "main": "bower.json",
+  "authors": [
+    "oscarmendezaguirre <oscar@zinobe.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sd"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "artyom.js": "^1.0.6"
+  }
+}
