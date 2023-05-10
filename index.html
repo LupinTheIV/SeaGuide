@@ -18,17 +18,18 @@
             <div class="col-md-12 top">
                 <img class="logo" src="img/SeaGuideLogo.jpeg">
             </div>
-            <button id="voz">Activar reconocimiento de voz</button>
+            <button id="voz" class="bi bi-mic-fill">Activar reconocimiento de voz</button>
+            <button id="cameraBtn" onclick="openCamera()" class="bi bi-camera-reels-fill"> Activar reconocimiento de objetos</button>
         </div>
         <div class="row">
-            <div id="cameraBox" class="col-md-12 camera">
+            <div id="camera_container" class="col-md-12">
+                <i class="bi bi-camera-reels-fill camaraIcon"></i>
                 <video id="v" autoplay="true"></video>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 map">
                 <img class="apartment" src="img/apartamento.png">
-                <button id="cameraBtn" onclick="openCamera()" class="bi bi-camera-reels-fill camaraIcon"></button>
                 <div id="mainDoor"></div>
                 <div id="bathroom2Door"></div>
                 <div id="room3Door"></div>
@@ -50,7 +51,7 @@
         </div>
     </div>
     
-    <!--<script src="/operations/video/videoDetect.js"></script>-->
+    <script src="/operations/video/videoDetect.js"></script>
     <script src="/operations/voice/voice.js"></script>
 </body>
 </html>

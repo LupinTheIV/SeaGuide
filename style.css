@@ -1,5 +1,13 @@
+body{
+    background: url(/img/background.png);
+    background-size:auto;
+}
 .top{
+    background-color: white;
     border: solid black;
+}
+.map{
+    margin-top: 3px;
 }
 .logo{
     width: 15%;
@@ -9,8 +17,14 @@
 .camaraIcon{
     font-size: 200%;
     position: relative;
-    left: 25%;
-    bottom: 240px;
+    left: 20%;
+    bottom: 220px;
+}
+#camera_container{
+    background-color: white;
+    margin-top: 3px;
+    border: solid black;
+    text-align: center;
 }
 .lightIcon{
     font-size: 200%;
@@ -53,17 +67,23 @@
     margin-top: 5px;
 }
 video{
-    height: 300px;
+    position:relative;
+    height: 0% !important;
+    width: 0% !important; 
+    text-align: center !important; 
 }
-.camera{
-    text-align: center;
-    margin-top: 5px;
-    border: solid black;
+canvas{
+    display: inline;
 }
-
+#defaultCanvas0{
+    position: relative;
+    margin-top: 3px;
+    height: 40% !important;
+    width: 40% !important;
+}
 #mainDoor{
     position: relative;
-    top: -215px;
+    top: -183px;
     left: 27.5%;
     width: 6.5%;
     height: 5px;
@@ -72,7 +92,7 @@ video{
 }
 #bathroom2Door{
     position: relative;
-    top: -234px;
+    top: -192px;
     left: 38.3%;
     width: 3.5%;
     height: 5px;
@@ -81,7 +101,7 @@ video{
 }
 #room3Door{
     position: relative;
-    top: -304px;
+    top: -263px;
     left: 55.1%;
     width: 3.8%;
     height: 5px;
@@ -90,7 +110,7 @@ video{
 }
 #room2Door{
     position: relative;
-    top: -314px;
+    top: -272px;
     left: 64.6%;
     width: 3.8%;
     height: 5px;
@@ -99,7 +119,7 @@ video{
 }
 #mainRoomDoor{
     position: relative;
-    top: -294px;
+    top: -252px;
     left: 74.3%;
     width: 3.2%;
     height: 5px;
@@ -109,7 +129,7 @@ video{
 }
 #bathroom1Door{
     position: relative;
-    top: -193px;
+    top: -151px;
     left: 64.4%;
     width: 3.2%;
     height: 5px;
@@ -120,7 +140,7 @@ video{
 #windowLivingRoom{
     position: relative;
     left: 16.8%;
-    top: -860px;
+    top: -818px;
     width: 17.7%;
     height: 5px;
     background-color: rgb(143, 225, 255);
@@ -129,7 +149,7 @@ video{
 #windowRoom3{
     position: relative;
     left: 52.3%;
-    top: -677px;
+    top: -635px;
     width: 6.7%;
     height: 5px;
     background-color: rgb(143, 225, 255);
@@ -138,7 +158,7 @@ video{
 #windowRoom2{
     position: relative;
     left: 62%;
-    top: -686px;
+    top: -645px;
     width: 9.7%;
     height: 5px;
     background-color: rgb(143, 225, 255);
@@ -147,7 +167,7 @@ video{
 #windowMainRoom{
     position: relative;
     left: 94.1%;
-    top: -289px;
+    top: -248px;
     width: 7.6%;
     height: 5px;
     background-color: rgb(143, 225, 255);
