@@ -12,6 +12,38 @@
     left: 25%;
     bottom: 240px;
 }
+.lightIcon{
+    font-size: 200%;
+    position: relative;
+}
+#lightLivingRoom{
+    left: 28%;
+    bottom: 640px;
+}
+#lightkitchen{
+    left: 5%;
+    bottom: 640px;
+}
+#lightRoom3{
+    left: 50%;
+    bottom: 580px;
+}
+#lightBathRoom2{
+    left: 35%;
+    bottom: 250px;
+}
+#lightBathRoom1{
+    left: 49%;
+    bottom: 250px;
+}
+#lightRoom2{
+    left: 55.5%;
+    bottom: 580px;
+}
+#lightMainRoom{
+    left: 66%;
+    bottom: 300px;
+}
 .apartment{
     height: 100%;
     width: 100%;
@@ -34,17 +66,91 @@ video{
     top: -215px;
     left: 27.5%;
     width: 6.5%;
-    height: 9px;
+    height: 5px;
     background-color: rgb(140, 77, 9);
     border: solid black;
-    rotate: 0deg;
+}
+#bathroom2Door{
+    position: relative;
+    top: -234px;
+    left: 38.3%;
+    width: 3.5%;
+    height: 5px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+}
+#room3Door{
+    position: relative;
+    top: -304px;
+    left: 55.1%;
+    width: 3.8%;
+    height: 5px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+}
+#room2Door{
+    position: relative;
+    top: -314px;
+    left: 64.6%;
+    width: 3.8%;
+    height: 5px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+}
+#mainRoomDoor{
+    position: relative;
+    top: -294px;
+    left: 74.3%;
+    width: 3.2%;
+    height: 5px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+    rotate: 90deg;
+}
+#bathroom1Door{
+    position: relative;
+    top: -193px;
+    left: 64.4%;
+    width: 3.2%;
+    height: 5px;
+    background-color: rgb(140, 77, 9);
+    border: solid black;
+    rotate: 90deg;
 }
 #windowLivingRoom{
     position: relative;
     left: 16.8%;
-    top: -815px;
+    top: -860px;
     width: 17.7%;
     height: 5px;
     background-color: rgb(143, 225, 255);
     border: solid black;
+}
+#windowRoom3{
+    position: relative;
+    left: 52.3%;
+    top: -677px;
+    width: 6.7%;
+    height: 5px;
+    background-color: rgb(143, 225, 255);
+    border: solid black;
+}
+#windowRoom2{
+    position: relative;
+    left: 62%;
+    top: -686px;
+    width: 9.7%;
+    height: 5px;
+    background-color: rgb(143, 225, 255);
+    border: solid black;
+}
+#windowMainRoom{
+    position: relative;
+    left: 94.1%;
+    top: -289px;
+    width: 7.6%;
+    height: 5px;
+    background-color: rgb(143, 225, 255);
+    border: solid black;
+    rotate: 90deg;
 }
