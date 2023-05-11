@@ -1,4 +1,4 @@
-//var artyom = new Artyom();
+var artyom = new Artyom();
 
 let video = null;
 let detector = null;
@@ -52,11 +52,6 @@ function onDetected(error, results) {
     console.error(error);
   }
   detections = results;
-/*
-  if(results.laber = 'person' && results.length >= 2){
-    console.log('Hay más de 1 personas wey', 'cantidad ',results.length)
-  }*/
-
   if (detecting) {
     detect();
   }

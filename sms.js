@@ -1,7 +1,7 @@
 var TeleSignSDK = require('telesignsdk');
 
 const customerId = "4DD4AEB0-39D1-40A4-8D83-297231474A6B";
-const apiKey = "*********************************";
+const apiKey = "N5/FNrEPHz7RUnVSDshkssVkDuce2CfsBIzLyVN/+s7nZWpFsB/nboan1Ecl4YpZUbhy0tJjOFYcjzP+Y0eSZQ==";
 const rest_endpoint = "https://rest-api.telesign.com";
 const timeout = 10*1000; // 10 secs
 
@@ -13,7 +13,7 @@ timeout // optional
 );
 
 const phoneNumber = "573107576990";
-const message = "You're scheduled for a dentist appointment at 2:30PM.";
+const message = "Prueba";
 const messageType = "ARN";
 
 console.log("## MessagingClient.message ##");
