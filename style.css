@@ -1,21 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
-    background: url(/img/background.png);
+    background: url(backgroundHome.jpeg);
     background-size:auto;
 }
-
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(224, 246, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    height: 10%;
+    width: 10%;
+}
+.nav_bar a{
+    position: relative;
+    font-size:  1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    color: black;
+}
 .top{
     background-color: white;
     border: solid black;
+}
+.nav{
+    --img1: scale(1);
+    --img2: scale(0);
+}
+.nav:has( .dropdown:target){
+    --img1: scale(0);
+    --img2: scale(1);
+
+    --clip: inset(0 0 0 0);
+}
+.nav_container{
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
 }
 .map{
     margin-top: 3px;
     position: relative;
 }
 .logo{
-    width: 15%;
-    height: 15%;
+    width: 63%;
+    height: 63%;
     margin-left: 1%;
+    grid-area: title;
+}
+.nav_menu{
+    grid-area: img;
+    position: relative;
+    z-index: 10;
+
+    transform: var(--img1)
+}
+.nav_menu--second{
+    transform: var(--img2);
+}
+.nav_icon{
+    font-size: 150%;
+    display: block;
+    color: black;
+}
+.dropdown{
+    position: absolute;
+    background-color: rgb(231, 255, 253);
+    border: solid black;
+    width: 20%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+
+    display: grid;
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+    z-index: 9;
+    align-content: center;
+}
+.dropdown_list{
+    list-style: none;
+}
+.dropdown_link{
+    color: black;
+    padding: 1em .7em;
+    text-decoration: none;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: .6em;
 }
 .camaraIcon{
     font-size: 200%;

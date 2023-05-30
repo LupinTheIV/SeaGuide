@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
   "dependencies": {
-    "artyom": "^0.0.1-security"
+    "artyom": "^0.0.1-security",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.2.1"
   }
 }

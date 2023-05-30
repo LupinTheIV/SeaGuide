@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaGuide</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.7.1/dist/ml5.min.js"></script>
+    <script src="artyom.window.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="SeaGuideLogo.png">
+        <nav class="nav">
+            <nav class="nav_bar">
+            <a href="#menu" class="nav_menu">
+                <i class="bi bi-house-gear-fill  nav_icon"></i>
+            </a>
+            <a href="#" class="nav_menu nav_menu--second">
+                <i class="bi bi-x-lg nav_icon "></i>
+            </a>
+            <ul class="dropdown" id="menu">
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="cameraBtn" onclick="openCamera()">
+                        <i class="bi bi-camera-reels-fill"></i>
+                        <span class="dropdown_span">Activar camara</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="voz">
+                        <i class="bi bi-mic-fill"></i>
+                        <span class="dropdown_span">Activar micrófono</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="login" class="dropdown_link">
+                        <i class="bi bi-door-open-fill"></i>
+                        <span class="dropdown_span">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="cameraWrapper">
+            <div class="camera_container">
+                <i class="bi bi-camera-reels-fill camaraIcon"></i>
+                <video id="v" autoplay="true"></video>
+            </div>
+        </div>
+        <div class="apartmentWrapper">
+            <div class="apartmentContainer">
+                <img class="apartmentImg" src="apartamento.png">
+                    <div class="aptElements">
+                        <div id="mainDoor" class="door"></div>
+                        <div id="bathroom2Door" class="door"></div>
+                        <div id="room3Door" class="door"></div>
+                        <div id="room2Door" class="door"></div>
+                        <div id="mainRoomDoor" class="door"></div>
+                        <div id="bathroom1Door" class="door"></div>
+                        <div id="windowLivingRoom" class="window"></div>
+                        <div id="windowRoom3" class="window"></div>
+                        <div id="windowRoom2" class="window"></div>
+                        <div id="windowMainRoom" class="window"></div>
+                        <i id="lightLivingRoom" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightkitchen" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightMainRoom" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightRoom2" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightRoom3" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightBathRoom1" class="bi bi-lightbulb-fill lightIcon"></i>
+                        <i id="lightBathRoom2" class="bi bi-lightbulb-fill lightIcon"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+   <!-- <script src="videoDetect.js"></script>-->
+    <script src="voice.js"></script>
+    
+</body>
+</html>

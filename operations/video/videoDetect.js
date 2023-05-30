@@ -1,4 +1,4 @@
-var artyom = new Artyom();
+//var artyom = new Artyom();
 
 let video = null;
 let detector = null;
@@ -65,9 +65,9 @@ function openCamera() {
   if (!video || !detector) return;
   if (!detecting) {
     detect();
-    detectionAction.innerText = ' Desactivar reconocimiento por video';
+    document.getElementById("cameraBtn").style.color = "darkgreen";
   } else {
-    detectionAction.innerText = ' Activar reconocimiento por video';
+    document.getElementById("cameraBtn").style.color = "black";
   }
   detecting = !detecting;
 }

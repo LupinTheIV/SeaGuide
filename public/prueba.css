@@ -1,0 +1,16 @@
+video{
+    position:relative;
+}
+#defaultCanvas0{
+    
+}
+.cameraWrapper{
+    border: solid black;
+}
+#camera_container{
+    background-color: white;
+    margin-top: 3px;
+    border: solid black;
+    text-align: center;
+    position: relative;
+}

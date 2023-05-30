@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://img.freepik.com/free-vector/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea_1284-42065.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(224, 246, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    height: 10%;
+    width: 10%;
+}
+.nav_bar a{
+    position: relative;
+    font-size:  1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    color: black;
+}
+.nav_bar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:  .3s;
+}
+.nav_bar a:hover::after{
+    transform: scaleX(1);
+}
+.nav_bar .btn-login{
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 50px;
+    font-size: 20px;
+    transition: .3s;
+}
+.nav_bar .btn-login:hover{
+    background: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: #f1f9ff7a;
+    border: 5px solid rgba(255,255,255, .5);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+.submitLogin{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1em;
+    color: #fff;
+}
+.signUplink{
+    margin-top: 5px;
+}
