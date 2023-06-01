@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="logo.ico"/>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>SeaGuide:Login</title>
 </head>
 <body>
     <header>
         <img class="logo" src="SeaGuideLogo.png" alt="">
         <nav class="nav_bar">
-            <a href="home.hbs">Inicio</a>
-            <a href="home.hbs">Sobre Nosotros</a>
-            <a href="home.hbs">Contacto</a>
-            <button class="btn-login">Login</button>
+            <a href="/" class="nav_item">Inicio</a>
+            <a href="#aboutUs" class="nav_item">Sobre Nosotros</a>
+            <a href="#contact" class="nav_item">Contacto</a>
+            <a href="login"><button class="btn-login">Login</button></a>
         </nav>
     </header>
+    
     <div class="wrapper">
         <div class="form-box Sign">
             <h2>Login</h2>
@@ -37,6 +39,29 @@
             </form>
         </div>
     </div>
+    <footer class="bottom">
+        <div class="group1">
+            <div class="box">
+                <figure>
+                    <img class="logo" src="SeaGuideLogo.png">
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una compañia asociada con la fundación Inclusión y Dignidad que busca mejorar la seguidad de las personas que presentes una condición de movilidad reducida</p>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="socials">
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="group2">
+            <small>&copy; 2023 <b>SeaGuide</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     

@@ -65,7 +65,6 @@ function onDetected(error, results) {
   }
 }
 function detect() {
-  console.log(detector)
   detector.detect(video, onDetected);
 }
 function openCamera() {

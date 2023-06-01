@@ -26,10 +26,10 @@ header{
     z-index: 99;
 }
 .logo{
-    height: 10%;
-    width: 10%;
+    height: 12%;
+    width: 12%;
 }
-.nav_bar a{
+.nav_bar .nav_item{
     position: relative;
     font-size:  1.1em;
     text-decoration: none;
@@ -71,8 +71,10 @@ header{
     height: 50px;
     font-size: 25px;
 }
+/*Content*/
+
 .wrapper{
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 440px;
     background-color: #f1f9ff7a;
@@ -142,4 +144,76 @@ header{
 }
 .signUplink{
     margin-top: 5px;
+}
+/*Footer*/
+footer{
+    bottom: 0;
+    position: absolute;
+}
+.bottom{
+    width: 100%;
+    height: 20px;
+    background-color: #0a141d;
+}
+.bottom .group1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px 45px 40px 20px;
+    background-color:#0a141d;
+}
+.bottom .group1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.bottom .group1 .box figure img{
+    width: 250px;
+    height: 60px;
+}
+.bottom .group1 .box h2{
+    color: #fff;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.bottom .group1 .box p{
+    color: #fff;
+    margin-top: 10px;
+}
+.bottom .group1 .socials a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.bottom .group1 .socials a:hover{
+    color: aqua;
+}
+.bottom .group2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.bottom .group1 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .bottom .group1{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
